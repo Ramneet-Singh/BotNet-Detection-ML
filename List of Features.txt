@@ -1,0 +1,24 @@
+1. Source IP (Source = Originating IP)
+2. Destination IP
+3. Source Port
+4. Destination Port
+5. Protocol (TCP,UDP,ICMP)
+6. PX (total number of packets exchanged) *IMP
+7. NNP (number of null packets (0 length payload) exchanged)
+8. NSP (number of small packets (length 63-400) exchanged)
+9. PSP (percentage of small packets exchanged)
+10. PNP (percentage of null packets exchanged)
+11. IOPR (ratio between the number of incoming packets over the number of outgoing packets)
+12. FPS (length of the first packets)
+13. TBT (total number of bytes)
+14. APL (average payload packet length)
+15. PV (standard deviation of payload packet length)
+16. BS (average bits-per-second)
+17. AIT (average inter-arrival time of packets)
+18. PPS (average-packets-per-second)
+19. HTTP Method (GET,POST,PUT,DELETE,Null)
+	19-1. HTTPM0
+	19-2. HTTPM1
+	19-3. HTTPM2
+	19-4. HTTPM3
+	19-5. HTTPM4
