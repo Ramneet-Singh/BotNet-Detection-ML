@@ -12,33 +12,33 @@ The objective was to develop a tool for **identifying P2P bot-nets using network
 
 ### 1. Feature Extraction
 
-	- We manually tested examined the data, for getting a comprehensive understanding of the dataset provided.
-	- We consulted multiple research papers to get an understanding of the different methods that we could use to approach the problem and create an exhaustive set of features.
-	- Raw data files were parsed and the previously decided features were extracted.
-	- We had a dataset with 2.57 Million examples in total, which we then split into Train, Validation and Test Sets (the sizes are mentioned in subsequent steps).
+- We manually tested examined the data, for getting a comprehensive understanding of the dataset provided.
+- We consulted multiple research papers to get an understanding of the different methods that we could use to approach the problem and create an exhaustive set of features.
+- Raw data files were parsed and the previously decided features were extracted.
+- We had a dataset with 2.57 Million examples in total, which we then split into Train, Validation and Test Sets (the sizes are mentioned in subsequent steps).
 
 
 ### 2. Feature Selection
 
-	- We ran 2 Feature Selection algorithms on the train set, namely **Select-K-Best** and **Recursive Feature Elimination (RFE)**.
-	- Through the results from these two, we selected the 10 best features out of 23 initial features that we had identified.
+- We ran 2 Feature Selection algorithms on the train set, namely **Select-K-Best** and **Recursive Feature Elimination (RFE)**.
+- Through the results from these two, we selected the 10 best features out of 23 initial features that we had identified.
 
 ### 3. Model Building
 
-	- We used a Gradient Boosting Decision Tree framework called LightGBM, which is efficient and capable of handling large-scale data.
-	- We tuned the Hyperparameters like max_depth to make our model robust and prevent overfitting.
-	- The Cross-Validation Set Size was 33.33% of our training set.
-	- Cross-Validation Accuracy was used as the evaluation metric.
-	- Batch-learning was used with a Batch-size of 10000.
+- We used a Gradient Boosting Decision Tree framework called LightGBM, which is efficient and capable of handling large-scale data.
+- We tuned the Hyperparameters like max_depth to make our model robust and prevent overfitting.
+- The Cross-Validation Set Size was 33.33% of our training set.
+- Cross-Validation Accuracy was used as the evaluation metric.
+- Batch-learning was used with a Batch-size of 10000.
 
 ### 4. Model Testing
 
-	- We tested the model with 10% of our total data.
-	- Some of the results that we obtained are:  
-	
-	Accuracy | Precision | Recall | F1 Score
-	---------|-----------|--------|---------
-	99.90%   | 99.93%    | 99.95% | 99.94%
+- We tested the model with 10% of our total data.
+- Some of the results that we obtained are:  
+
+Accuracy | Precision | Recall | F1 Score
+---------|-----------|--------|---------
+99.90%   | 99.93%    | 99.95% | 99.94%
 	
 ## Unique Contributions
 
@@ -67,4 +67,4 @@ The objective was to develop a tool for **identifying P2P bot-nets using network
 
 	Flow= (srcAddr, sPort, dstAddr, dPort, Protocol) |	Prediction
 	------------------------------------------------|------------------
-	<Flow-5-Tuple>					|	malicious/benign
+	  <Flow-5-Tuple>				|	malicious/benign
