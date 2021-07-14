@@ -2,6 +2,16 @@
 
 This repository contains Team SaRaNi's (with me as **Team Leader**) submission to the **HCL Hack IITK 2020 Cybersecurity Hackathon**. We won the **Third Prize** globally for developing this tool. Note that the actual submission contained some preprocessed data as well, which is way too large to upload. We have included our **Finals Presentation**, please check it out for a summary of our contributions as well as future directions to improve this tool.
 
+## Index
+- [**Motivation**](#motivation)
+- [**Machine Learning Pipeline**](#machine-learning-pipeline)
+    1. [**Feature Extraction**](#1-feature-extraction)
+    2. [**Feature Selection**](#2-feature-selection)
+    3. [**Model Building**](#3-model-building)
+    4. [**Model Testing**](#4-model-testing)
+- [**Unique Contributions**](#unique-contributions)
+- [**Execution Instructions**](#execution-instructions)
+
 ## Motivation
 
 A bot-net is a network of infected hosts (bots) that works independently under the control of a Botmaster (Bot herder), which issues commands to bots using command and control (C&C) servers. Traditionally, bot-nets used a centralized client-server architecture which had a single point of failure but with the advent of peer-to-peer technology, the problem of single point of failure seems to have been resolved. Gaining advantage of the decentralized nature of the P2P architecture, botmasters started using P2P based communication mechanism. P2P bot-nets are **highly resilient** against detection even after some bots are identified or taken down. P2P bot-nets provide central frameworks for different cyber-crimes which include DDoS (Distributed Denial of Service), email spam, phishing, password sniffing, etc.  
@@ -65,6 +75,6 @@ Accuracy | Precision | Recall | F1 Score
 
 3. This folder contains a python program "botnetdetect.py". This program takes as command line input (path to) a .pcap file and outputs in the format  
 
-	Flow= (srcAddr, sPort, dstAddr, dPort, Protocol) |	Prediction
-	------------------------------------------------|------------------
-	  <Flow-5-Tuple>				|	malicious/benign
+Flow= (srcAddr, sPort, dstAddr, dPort, Protocol) |	Prediction
+------------------------------------------------|------------------
+  <Flow-5-Tuple>				|	malicious/benign
