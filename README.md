@@ -1,6 +1,6 @@
 # Machine Learning based P2P Bot-Net Detection through Network Flow Analysis
 
-This repository contains Team SaRaNi's (with me as **Team Leader**) submission to the **HCL Hack IITK 2020 Cybersecurity Hackathon**. We won the **Third Prize** globally for developing this tool. Note that the actual submission contained some preprocessed data as well, which is way too large to upload. We have included our **Finals Presentation**, please check it out for a summary of our contributions as well as future directions to improve this tool.
+This repository contains Team SaRaNi's (with me as **Team Leader**) submission to the **HCL Hack IITK 2020 Cybersecurity Hackathon**. We won the **Third Prize** globally for developing this tool. Note that the actual submission contained some preprocessed data as well, which is way too large to upload. We have included our **Finals Presentation**, please check it out at [Presentation](https://drive.google.com/file/d/1Y2dgCFZ0uKDx9qqxJ4AYFhegfl_lPpSA/view?usp=sharing) for a summary of our contributions as well as future directions to improve this tool.
 
 ## Index
 - [**Motivation**](#motivation)
