@@ -16,7 +16,7 @@ This repository contains Team SaRaNi's (with me as **Team Leader**) submission t
 
 A bot-net is a network of infected hosts (bots) that works independently under the control of a Botmaster (Bot herder), which issues commands to bots using command and control (C&C) servers. Traditionally, bot-nets used a centralized client-server architecture which had a single point of failure but with the advent of peer-to-peer technology, the problem of single point of failure seems to have been resolved. Gaining advantage of the decentralized nature of the P2P architecture, botmasters started using P2P based communication mechanism. P2P bot-nets are **highly resilient** against detection even after some bots are identified or taken down. P2P bot-nets provide central frameworks for different cyber-crimes which include DDoS (Distributed Denial of Service), email spam, phishing, password sniffing, etc.  
 
-The objective was to develop a tool for **identifying P2P bot-nets using network traffic analysis**. We also detect the hosts involved in P2P traffic and then the detected hosts are further analyzed to detect bot-nets. We formulated the underlying problem as a **Classification** problem, which was given as input a Flow, which is a 5-Tuple of (srcAddr, sPort, dstAddr, dPort, Protocol), and had to output a label classifying the flow as malicious or benign. The overall tool then, took as input a .pcap file which captured the traffic over a network, parsed the file to identify flows, and then use our trained model to classify each flow on-the-fly as malware/benign. Below we give a brief overview of our machine learning pipeline.
+The objective was to develop a tool for **identifying P2P bot-nets using network traffic analysis**. We also detect the hosts involved in P2P traffic and then the detected hosts are further analyzed to detect bot-nets. We formulated the underlying problem as a **Classification** problem, which was given as input a Flow, which is a 5-Tuple of (srcAddr, sPort, dstAddr, dPort, Protocol), and had to output a label classifying the flow as malicious or benign. The overall tool then, took as input a .pcap file which captured the traffic over a network, parsed the file to identify flows, and then used our trained model to classify each flow on-the-fly as malware/benign. Below we give a brief overview of our machine learning pipeline.
 
 ## Machine Learning Pipeline
 
@@ -60,15 +60,14 @@ Accuracy | Precision | Recall | F1 Score
 ## Execution Instructions
 
 1. Packages required :
-
-	i. numpy
-	ii. sklearn
-	iii. pandas
-	iv. lightgbm
-	v. os
-	vi.sys
-	vii. csv
-	viii. scapy
+	1. numpy
+	2. sklearn
+	3. pandas
+	4. lightgbm
+	5. os
+	6.sys
+	7. csv
+	8. scapy
 
 2. How to install packages :  
 	From Terminal : ```$ pip install <package name>```
