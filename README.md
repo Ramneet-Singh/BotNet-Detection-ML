@@ -22,7 +22,7 @@ The objective was to develop a tool for **identifying P2P bot-nets using network
 
 ### 1. Feature Extraction
 
-- We manually tested examined the data, for getting a comprehensive understanding of the dataset provided.
+- We manually tested and examined the data, for getting a comprehensive understanding of the dataset provided.
 - We consulted multiple research papers to get an understanding of the different methods that we could use to approach the problem and create an exhaustive set of features.
 - Raw data files were parsed and the previously decided features were extracted.
 - We had a dataset with 2.57 Million examples in total, which we then split into Train, Validation and Test Sets (the sizes are mentioned in subsequent steps).
